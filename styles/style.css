@@ -1,10 +1,38 @@
 *, *::before, *::after {
     box-sizing: inherit;
+    font-family: inherit;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'ralewayregular';
 }
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ralewayitalic';
+  src: url('../fonts/raleway-italic-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ralewayregular';
+  src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 * {
   margin: 0;
@@ -12,13 +40,15 @@ html {
 }
 
 :root{
-  --flower-pink-transparent: rgba(241,160,176,.5);
+  --flower-pink-transparent: rgba(241,160,176,.6);
 }
+
+
 
 #wrapper{
   display: flex;
-  width: 50%;
   height: 800px;
+  max-width: 1700px;
 }
 
 .picture{
@@ -34,12 +64,27 @@ html {
 .sidebar{
   display: flex;
   position: relative;
-  top: 5rem;
+  top: 8rem;
   width: 100%;
   height: 10rem;
   justify-content: center;
   align-items: center;
+  font-family: "ralewayregular";
   background-color: var(--flower-pink-transparent)
+}
+
+.logo{
+  height:100px;
+  width: 100px;
+}
+
+h1{
+  margin: 2.5rem 0rem 0rem .5rem;
+}
+
+.slogan{
+  font-size: 80%;
+  font-weight: 800;
 }
 
 .container{
@@ -47,20 +92,24 @@ html {
   flex-direction: column;
   width: 60%;
   height: 100%;
+  background: rgba(225,222,235, .2);
 }
 
 .container > p {
-  padding: 7.5em 2em 2em 2em;
-  height: 15rem;
+  height: 18rem;
+  font-size: 120%;
+  text-align: start;
+  padding-top: 10rem;
+  padding-left: 2.9rem;
 }
 
 .form-container{
   display: flex;
   gap: 2em;
   height: 330px;
-  justify-content: center;
-  
-  box-shadow: 0px 10px 0px grey, 0px -10px 5px grey;
+  justify-content: flex-start;
+  background: white;
+  box-shadow: 0 -5px 15px -5px grey, 0 5px 15px -5px grey;
   
 }
 
@@ -75,14 +124,22 @@ html {
 .form-input{
   display: flex;
   flex-direction: column;
+  gap: .3rem;
 }
 
 #submit-button {
-  background-color: rgba(199,110,117, .3);
+  background-color: var(--flower-pink-transparent);
   font-weight: 900;
-  margin-top: 2em;
+  margin-top: -.5rem;
+  margin-bottom: .5rem;
+  padding:.7rem;
+  border: none;
 }
 
-.form-right > p{
-  margin-top: 1.5em;
+input {
+  height: 1.5rem;
+  width: 180px;
+  border-radius: 50;
+  border: .1em rgba(225,222,235, .2); solid;
+  background-color: rgba(225,222,235, .2);
 }
