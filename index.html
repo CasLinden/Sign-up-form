@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div class="picture">
+      <div class="sidebar">
+        <div class="logo"> LOGO HERE</div>
+        <div>Service Name</div>
+      </div>
+      <p>Picture by Henry & Co. on Unsplash</p>
+    </div>
+
+    <div class="container">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        <br><br>Feed me your data below:
+      </p>
+
+      <form action="http://httpbin.org/post" method="post">
+        <div class="form-container">
+          <div class="form-left">
+            <div class="form-input"><label for="input1">First Name</label><input type="text" id="input1" name="firstName" placeholder="Ken"></div>
+            <div class="form-input"><label for="input2">Email</label><input type="email" id="input2" name="email" placeholder="matsuyamaken@me.com"></div>
+            <div class="form-input"><label for="input3">Password</label><input type="password" id="input3" name="password1"></div>
+             <button type="submit" id="submit-button"> Join the club!</button>
+          </div>
+          <div class="form-right">
+            <div class="form-input"><label for="input4">Last Name</label><input type="tel" id="input4" name="lastName" placeholder="Matsuyama"></div>
+            <div class="form-input"><label for="input5">Phone Number</label><input type="text" id="input5" name="phone" placeholder="070 3020 3040"></div>
+            <div class="form-input"><label for="input6">Confirm Password</label><input type="password" id="input6" name="password2" placeholder=""></div>
+            <p>Already a member?<a href="">Log in!</a></p>
+          </div>
+        </div>
+       
+      </form>
+
+      
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
